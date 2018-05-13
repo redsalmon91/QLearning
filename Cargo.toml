@@ -1,0 +1,7 @@
+[package]
+name = "q_learning"
+version = "0.1.0"
+authors = ["Zixiao Han <andyzx.han@gmail.com>"]
+
+[dependencies]
+rand = "0.4.2"
