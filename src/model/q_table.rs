@@ -44,6 +44,9 @@ impl QTable {
     }
 }
 
+/*
+clone().fold() makes use of extra memory/cpu, so I rather do a naive iteration to get the max value
+*/
 fn get_max_rewards(rewards_vector: &Vec<f64>) -> f64 {
     let mut max = rewards_vector[0];
     for rewards in rewards_vector {

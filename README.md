@@ -1,67 +1,35 @@
-# The Travel Ghost
+# The Traveling Ghost
 
-A very simple example to demonstrate how **Q-learning** works.
+A very simple example to demonstrate how **Q-learning** works (not DQL).
 
-## Game Background
+## The Game
 
-Long long time ago, there was a little ghost who trapped himself in an one-dimensional space, as shown below:
+Long long time ago, there was a little ghost who trapped himself in a one-dimensional space.
 
-:office::office::office::office::office::office::office::office::office:
+&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;
 
-:bomb:======:ghost:=======:european_castle:                                 
+&#x1f4a3;======&#x1f47b;=========&#x1f3f0;                                 
 
-:office::office::office::office::office::office::office::office::office:
+&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;
 
+
+## Rules
 
 - The goal for the ghost is to reach the castle as soon as possible.
 - The ghost can go either **left** or **right**, one step at a time.
 - The ghost cannot see anything; he will know whether he has reached the castle or the bomb only when he gets to that location.
-
-## Requirements
 - The Q-learning agent should not have any hard-coded knowledge.
 - The environment should only give feedback when the agent reaches the castle or the bomb.
 - For each step, the environment allows the agent to choose to move either left or right.
 
-# How to run the program
+## Run the Program
 
-```
-> cargo run
-```
-of if you prefer to compile to binary
+Compile
 ```
 > cargo build --release
-> ./target/release/q_learning
 ```
 
-## Sample Output
+Run
 ```
-============== Training Episode 99 ===============
-Episode 99 State 1 Action →
-Episode 99 State 2 Action →
-Episode 99 State 3 Action →
-Episode 99 State 4 Action →
-Episode 99 State 5 Action →
-Episode 99 State 6 Action →
-Episode 99 State 7 Action ←
-Episode 99 State 6 Action →
-Episode 99 State 7 Action →
-Episode 99 State 8 Action ←
-Episode 99 State 7 Action →
-Episode 99 State 8 Action →
-Episode 99 State 9 Action →
-Episode 99 State 10 Action →
-Episode 99 State 11 Action →
-============== Simulating with Trained Knowledge ===============
-State 1 Action →
-State 2 Action →
-State 3 Action →
-State 4 Action →
-State 5 Action →
-State 6 Action →
-State 7 Action →
-State 8 Action →
-State 9 Action →
-State 10 Action →
-State 11 Action →
-Simulation Results: Reached the castle!
+> q_learning <map-length> <initial-index> <training-episode-count> <learning-rate> <greedy-factor>
 ```
