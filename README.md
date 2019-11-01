@@ -6,11 +6,7 @@ A very simple example to demonstrate tabular **Q-learning**.
 
 Long long time ago, there was a little ghost who trapped himself in a one-dimensional space.
 
-&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;
-
-&#x1f4a3;======&#x1f47b;=========&#x1f3f0;                                 
-
-&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;&#x1f3e2;
+&#x1f4a3;🌳🌳🌳🌳🌳🌳🌳&#x1f47b;🌳🌳🌳🌳🌳&#x1f3f0;                                 
 
 
 ## Rules
