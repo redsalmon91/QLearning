@@ -1,30 +1,38 @@
-# The Traveling Ghost
 
-A very simple example to demonstrate tabular **Q-learning**.
+A simple program to demonstrate tabular **Q-learning**.
 
-## The Game
+## Game Description
 
-Long long time ago, there was a little ghost who trapped himself in a one-dimensional space.
+An elf is trapped in a forest, our goal is to help him to return to one of the castles.
 
-&#x1f4a3;🌳🌳🌳🌳🌳🌳🌳&#x1f47b;🌳🌳🌳🌳🌳&#x1f3f0;                                 
+🌲🌲🌲🏰🌲🌲🌲🌲🌲🌲  
+🌲🌲🌲🌲🌲🌲🦁🌲🌲🌲  
+🌲🌲🌲🌲🌲🌲🌲🌲🦁🌲  
+🌲🌲🌲🧝🌲🌲🌲🌲🌲🌲  
+🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲  
+🌲🌲🌲🌲🌲🌲🌲🦁🌲🌲  
+🌲🦁🌲🌲🌲🌲🌲🌲🌲🌲  
+🌲🌲🌲🌲🌲🌲🌲🌲🌲🏰  
+🌲🌲🌲🦁🌲🦁🌲🌲🌲🌲  
+🌲🌲🌲🌲🌲🌲🌲🌲🌲🌲  
 
-
-## Rules
-
-- The goal for the ghost is to reach the castle as soon as possible.
-- The ghost can go either **left** or **right**, one step at a time.
-- The Q-learning agent does not have any hard-coded knowledge.
-- The environment should only give feedback when the agent reaches the castle or the bomb.
-- For each step, the environment allows the agent to choose to move either left or right.
+**Rules:**
+- The goal for the elf(agent) is to reach a castle as soon as possible.
+- The agent can go either left, right, up, or down; one step at a time.
+- Game is over if the elf has reached at one of the castles or is caught by one of the lions.
 
 ## Run the Program
 
-Compile
+**Compile**
 ```
 > cargo build --release
 ```
 
-Run
+**Run**
 ```
-> q_learning <map-length> <initial-index> <training-episode-count> <learning-rate> <greedy-factor>
+> q_learning <map-file> <number-of-training-episodes> <learning-rate> <greedy-factor> <discount-factor> <max-step-allowed-in-final-simulation>
+
 ```
+
+### Example Map File
+Please checkout map file located in `examples/map.txt`
